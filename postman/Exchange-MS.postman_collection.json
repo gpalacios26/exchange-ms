@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "2c9d5cf5-4c86-47e6-8aaf-4e33952405e1",
+		"name": "Exchange-MS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6370137",
+		"_collection_link": "https://nttdata-8314.postman.co/workspace/NTTDATA~6ee45e0a-5cff-41b4-811c-50f1f85fbd72/collection/6370137-2c9d5cf5-4c86-47e6-8aaf-4e33952405e1?action=share&source=collection_link&creator=6370137"
+	},
+	"item": [
+		{
+			"name": "Save Exchange",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"buy\": 3.65,\r\n    \"sell\": 3.80,\r\n    \"dateTime\": \"2025-05-09T13:35:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Exchanges",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Real Time Exchange",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/exchange/realtime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange",
+						"realtime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile Exchange",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/exchange/profile/search?profile=LOW&date=2025-05-09",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"exchange",
+						"profile",
+						"search"
+					],
+					"query": [
+						{
+							"key": "profile",
+							"value": "LOW"
+						},
+						{
+							"key": "date",
+							"value": "2025-05-09"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
