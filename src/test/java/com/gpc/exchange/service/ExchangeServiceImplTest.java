@@ -125,11 +125,7 @@ class ExchangeServiceImplTest {
     LocalDateTime now = LocalDateTime.now();
     ProfileFilterDTO filterDTO = new ProfileFilterDTO("INVALID", date);
 
-    List<Exchange> exchanges = List.of(
-        new Exchange(1L, 100.0, 200.0, now),
-        new Exchange(2L, 150.0, 250.0, now),
-        new Exchange(3L, 200.0, 300.0, now)
-    );
+    List<Exchange> exchanges = List.of(new Exchange(1L, 100.0, 200.0, now));
 
     Mockito.when(repository.findByDateTimeBetween(Mockito.any(), Mockito.any()))
         .thenReturn(Flux.fromIterable(exchanges));
