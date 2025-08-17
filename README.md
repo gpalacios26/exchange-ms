@@ -1,6 +1,6 @@
 # Code challenge - Ejercicio Lvl 3: Microservicio Exchange
 
-Este proyecto es un microsevicio **Java** utilizando **Spring Boot** y **WebFlux** para construir una API reactiva de posturas de compra y venta de divisas.
+Este proyecto es un microservicio **Java** utilizando **Spring Boot** y **WebFlux** para construir una API reactiva de posturas de compra y venta de divisas.
 
 ---
 
